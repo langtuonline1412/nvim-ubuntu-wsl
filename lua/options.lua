@@ -8,5 +8,4 @@ vim.opt.cursorline = true -- tô sáng dòng hiện tại
 vim.opt.mouse = "a"
 vim.opt.clipboard = "unnamedplus" -- chia sẻ clipboard với hệ điều hành
 vim.opt.termguicolors = true -- bật màu chuẩn GUI
-vim.opt.shell = "pwsh"
-
+vim.opt.shell = "cmd"

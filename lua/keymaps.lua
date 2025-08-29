@@ -45,15 +45,6 @@ map("n", "<leader>cs", "<cmd>Telescope colorscheme<CR>", { desc = "Choose Colors
 
 map("i", "jj", "<Esc>", opts)
 
--- Biên dịch và chạy file Python
-map("n", "<leader>rp", ":w<CR>:terminal python %<CR>", { desc = "Run Python file" }, opts)
-
--- Biên dịch & chạy file C++
-map("n", "<leader>rc", ":w<CR>:terminal g++ % -o %:r && %:r<CR>", { desc = "Compile & run C++" }, opts)
-
--- Biên dịch & chạy file Java
-map("n", "<leader>rj", ":w<CR>:terminal javac % && java %:r<CR>", { desc = "Compile & run Java" }, opts)
-
 -- Linter
 map("n", "<leader>lf", function()
 	require("conform").format({ async = true, lsp_fallback = true })
