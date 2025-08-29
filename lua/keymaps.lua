@@ -35,7 +35,7 @@ map("n", "<C-j>", "<C-w>j", { desc = "Move to bottom window" })
 map("n", "<C-k>", "<C-w>k", { desc = "Move to top window" })
 
 -- Mở terminal dưới (horizontal)
-map("n", "<leader>t", ":split | terminal<CR>", { desc = "Open terminal below", silent = true })
+map("n", "<leader>t", ":botright 10split | terminal<CR>i", { desc = "Open terminal below", silent = true })
 
 -- Đóng terminal
 map("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })

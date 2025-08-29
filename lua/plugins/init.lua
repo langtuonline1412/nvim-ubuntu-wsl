@@ -5,6 +5,7 @@ return {
 	-- Giao diện
 	{ "nvim-lualine/lualine.nvim" },
 	{ "kyazdani42/nvim-web-devicons" },
+	{ "xiyaowong/transparent.nvim" },
 
 	-- file explorer
 	--NvimTree (mới)
