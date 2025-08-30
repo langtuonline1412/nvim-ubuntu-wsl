@@ -20,6 +20,7 @@ require("lazy").setup({
 	{ import = "plugins.dap" },
 	{ import = "plugins.markdown" },
 })
+
 require("nvim-tree").setup()
 require("configs.lsp")
 require("configs.treesitter")
