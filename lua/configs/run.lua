@@ -15,6 +15,9 @@ function RunCode()
 	elseif filetype == "cpp" then
 		-- C++ (compile và run trong terminal)
 		cmd = "g++ " .. file .. " -o " .. filename .. " && .\\" .. filename
+	elseif filetype == "c" then
+		-- C (compile and run)
+		cmd = "gcc " .. file .. " -o " .. filename .. " && .\\" .. filename
 	elseif filetype == "java" then
 		-- Java (compile và run trong terminal)
 		cmd = "javac " .. file .. " && java " .. filename
@@ -23,11 +26,13 @@ function RunCode()
 		cmd = "node " .. file
 	elseif filetype == "html" then
 		-- HTML (live-server, phải cài sẵn npm i -g live-server)
-		local choice = vim.fn.input("Chạy HTML bằng [1] live-server, [2] chrome: ")
+		local choice = vim.fn.input("Chạy file HTML bằng [1] live-server, [2] chrome, [3] Chạy live-server: ")
 		if choice == "1" then
 			cmd = "live-server " .. file
 		elseif choice == "2" then
 			cmd = "chrome " .. fullpath
+		elseif choice == "3" then
+			cmd = "live-server"
 		else
 			print("❌ Lựa chọn không hợp lệ.")
 			return

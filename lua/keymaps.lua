@@ -80,8 +80,8 @@ map("n", "<leader>Y", [["+Y]])
 map({ "n", "v" }, "<leader>d", [["_d]])
 
 -- move 5 lines up/down with arrows keys
-map("n", "<Down>", "5j")
-map("n", "<Up>", "5k")
+map("n", "<Down>", "5jzz")
+map("n", "<Up>", "5kzz")
 
 -- Mở terminal dưới (horizontal)
 map("n", "<leader>t", ":botright 10split | terminal<CR>i", { desc = "Open terminal below", silent = true })
