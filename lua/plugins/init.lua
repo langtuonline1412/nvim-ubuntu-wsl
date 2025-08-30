@@ -55,6 +55,9 @@ return {
 	-- Git integration
 	{ "lewis6991/gitsigns.nvim" },
 
+	-- Toggle Terminal
+	{ "akinsho/toggleterm.nvim", version = "*", config = true },
+
 	-- Chủ đề
 	{
 		"Mofiqul/dracula.nvim",
